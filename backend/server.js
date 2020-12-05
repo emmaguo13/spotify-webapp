@@ -4,6 +4,8 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 const PORT = 4200;
 const mongoose = require("mongoose");
+const authRouter = require("./routes/authRouter.js")
+const requestRouter = require("./routes/requestRouter.js")
 
 //const exchangeRates = require("./routes/routes") // route!
 
@@ -26,12 +28,15 @@ connection.once("open", function() {
 });
 
 // Routes
-//app.use("/route", exchangeRates)
+app.use("/auth", authRouter)
+app.use("/", requestRouter)
 
 // Listen on Port 4000
 app.listen(PORT, function() {
   console.log("Server is running on Port: " + PORT);
 });
+
+module.exports = { app }
 
 
 

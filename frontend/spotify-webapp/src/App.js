@@ -3,22 +3,22 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Switch>
+            {/* Maybe add navbar for regulator-sub pages then users-mfg pages*/}
+            <Route path="/">
+                <div>Home Page/Login</div>
+                <Login />
+            </Route>
+            <Route path="/loading">
+                <div> Loading page</div>
+                <Loading />
+            </Route>
+            <Route path="/results">
+                <div>Results</div>
+                <Results />
+            </Route>
+    </Switch>
+
   );
 }
 
