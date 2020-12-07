@@ -4,6 +4,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+<link rel="stylesheet" type="text/css" href="index.css">
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
@@ -11,7 +13,23 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+<nav class="navbar navbar-expand-lg fixed-top ">
+ <a class="navbar-brand" href="#">Home</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+ <span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse " id="navbarSupportedContent">     <ul class="navbar-nav mr-4">
+ <li class="nav-item">
+     <a class="nav-link" data-value="about" href="#">About</a>        </li>
+<li class="nav-item">
+    <a class="nav-link " data-value="portfolio"href="#">Portfolio</a>
+ </li>
+ <li class="nav-item">
+    <a class="nav-link " data-value="blog" href="#">Blog</a>         </li>
+<li class="nav-item">
+   <a class="nav-link " data-value="team" href="#">         Team</a>       </li>
+<li class="nav-item">
+ <a class="nav-link " data-value="contact" href="#">Contact</a>       </li>
+</ul>
+</div></nav>
 reportWebVitals();
