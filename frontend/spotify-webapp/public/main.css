@@ -5,6 +5,13 @@ html,h1,h2,h3,h4,h5,h6,a{
 
     font-family: "Raleway", serif;
 }
+@font-face {
+    font-family: 'Beyond Infinity - Demo Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Beyond Infinity - Demo Regular'), url('Beyond Infinity - Demo.woff') format('woff');
+}
+
 .navbar{
     background:#1ed760;
     min-height: 80px;
@@ -33,7 +40,7 @@ html,h1,h2,h3,h4,h5,h6,a{
     background-color:#007bff!important
 }
 .logo {
-    width: 100px;
+    width: 110px;
 }
 .top {
     font-size: 30px;
@@ -43,6 +50,9 @@ html,h1,h2,h3,h4,h5,h6,a{
     margin-left:30px;
     margin-right:30px;
 }
+.bar {
+    background-color: #09851D;
+}
 .vl {
     border-left: 1.5px solid black;
     height: 45px;
@@ -50,6 +60,9 @@ html,h1,h2,h3,h4,h5,h6,a{
 .v2 {
     height: 20px;
     width: auto;
+}
+.watson {
+    padding-left: 50px;
 }
 /*header style*/
 .header{
@@ -62,6 +75,7 @@ html,h1,h2,h3,h4,h5,h6,a{
 }
 
 .description{
+    font-family: 'Beyond Infinity - Demo Regular', serif;
     position: absolute;
     top: 30%;
     margin: auto;
@@ -69,7 +83,8 @@ html,h1,h2,h3,h4,h5,h6,a{
 }
 
 .description h1{
-    color:#F97300 ;
+    color:white;
+    font-size: 70px;
 }
 .description p{
     color:white;
