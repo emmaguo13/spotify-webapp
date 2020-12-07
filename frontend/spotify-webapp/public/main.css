@@ -53,27 +53,49 @@ html,h1,h2,h3,h4,h5,h6,a{
 .bar {
     background-color: #09851D;
 }
+.butt {
+    margin-left: 150px;
+    margin-top: 20px;
+}
+
+.description butt {
+    font-family: "Proxima Nova Rg", serif;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
 .vl {
     border-left: 1.5px solid black;
     height: 45px;
+
 }
 .v2 {
-    height: 20px;
-    width: auto;
+    border-left: 2px solid white;
+    height: 190px;
+    width: 2px;
+    margin-left: 40px;
+    margin-top: 90px;
+
+
 }
 .watson {
-    width: 520px;
+    width: 450px;
     padding-left: 250px;
-    padding-top: 80px;
+    padding-top: 90px;
 }
 .spotifyi {
-    width: 500px;
-    padding-top: 50px;
-    padding-left: 100px;
+    width: 400px;
+    padding-top: 77px;
+    padding-left: 30px;
 }
 .music {
-    padding-top: 10px;
-    width: 500px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    width: 594px;
     float: right;
 }
 /*header style*/
@@ -90,13 +112,14 @@ html,h1,h2,h3,h4,h5,h6,a{
     font-family: 'Beyond Infinity - Demo Regular', serif;
     position: absolute;
     top: 50%;
+    left: 5%;
     margin: auto;
     padding: 2em;
 }
 
 .description h1{
     color:white;
-    font-size: 70px;
+    font-size: 75px;
 }
 .description p{
     color:white;
@@ -108,36 +131,10 @@ html,h1,h2,h3,h4,h5,h6,a{
     border:1px  solid #1ed760;
     background:#1ed760;
     color:#fff;
+    font-family: "Proxima Nova",serif;
+}
+.fade-in {
+    opacity: 0;
 }
 
-.about{
-    margin: 4em 0;
-    padding: 1em;
-    position: relative;
-}
-.about h1{
-    color:#1ed760;
-    margin: 2em;
-}
-.about img{
-    height: 100%;
-    width: 100%;
-    border-radius: 50%
-}
-.about span{
-    display: block;
-    color: #888;
-    position: absolute;
-    left: 115px;
-}
-.about .desc{
-    padding: 2em;
-    border-left:4px solid #10828C;
-}
-.about .desc h3{
-    color: #10828C;
-}
-.about .desc p{
-    line-height:2;
-    color:#888;
-}
+
