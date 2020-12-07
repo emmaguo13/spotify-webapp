@@ -25,23 +25,19 @@ html,h1,h2,h3,h4,h5,h6,a{
 .bg-primary{
     background-color:#007bff!important
 }
+.logo {
+    width: 100px;
+}
 /*header style*/
 .header{
     background-color: black;
-    width: 1080px;
     height: 671px;
+    width: auto;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
 }
-.overlay{
-    position: absolute;
-    min-height: 100%;
-    min-width: 100%;
-    left: 0;
-    top: 0;
-    background: rgba(244, 244, 244, 0.79);
-}
+
 .description{
     position: absolute;
     top: 30%;
@@ -53,14 +49,14 @@ html,h1,h2,h3,h4,h5,h6,a{
     color:#F97300 ;
 }
 .description p{
-    color:#666;
+    color:white;
     font-size: 20px;
     width: 50%;
     line-height: 1.5;
 }
 .description button{
-    border:1px  solid #F97300;
-    background:#F97300;
+    border:1px  solid #1ed760;
+    background:#1ed760;
     color:#fff;
 }
 
@@ -70,7 +66,7 @@ html,h1,h2,h3,h4,h5,h6,a{
     position: relative;
 }
 .about h1{
-    color:#F97300;
+    color:#1ed760;
     margin: 2em;
 }
 .about img{
@@ -101,7 +97,7 @@ html,h1,h2,h3,h4,h5,h6,a{
     position: relative;
 }
 .portfolio h1{
-    color:#F97300;
+    color:#1ed760;
     margin: 2em;
 }
 .portfolio img{
@@ -115,7 +111,7 @@ html,h1,h2,h3,h4,h5,h6,a{
     position: relative;
 }
 .blog h1{
-    color:#F97300;
+    color:#1ed760;
     margin: 2em;
 }
 .blog .card{
@@ -126,7 +122,7 @@ html,h1,h2,h3,h4,h5,h6,a{
     height: 12em;
 }
 .blog .card-title{
-    color:#F97300;
+    color:#1ed760;
 
 }
 .blog .card-body{
