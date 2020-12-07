@@ -1,13 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 html,h1,h2,h3,h4,h5,h6,a{
 
     font-family: "Raleway", serif;
 }
-.navbar{ background:#1ed760;}
+.navbar{
+    background:#1ed760;
+    min-height: 80px;
+}
 
 .nav-link , .navbar-brand{ color: #f4f4f4; cursor: pointer;}
 
-.nav-link{ margin-right: 1em !important;}
+.nav-link{
+    margin-right: 1em !important;
+}
 
 .nav-link:hover{ background: #f4f4f4; color: #1ed760; }
 
@@ -27,6 +34,13 @@ html,h1,h2,h3,h4,h5,h6,a{
 }
 .logo {
     width: 100px;
+}
+.top {
+    font-size: 40px;
+    font-family: "Bebas Neue", serif;
+    color: white;
+    margin-left:30px;
+    margin-right:30px;
 }
 /*header style*/
 .header{
