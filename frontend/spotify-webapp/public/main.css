@@ -14,7 +14,7 @@ html,h1,h2,h3,h4,h5,h6,a{
 
 .navbar{
     background:#1ed760;
-    min-height: 80px;
+    min-height: 70px;
 }
 
 .nav-link , .navbar-brand{ color: #f4f4f4; cursor: pointer;}
@@ -62,7 +62,19 @@ html,h1,h2,h3,h4,h5,h6,a{
     width: auto;
 }
 .watson {
-    padding-left: 50px;
+    width: 520px;
+    padding-left: 250px;
+    padding-top: 80px;
+}
+.spotifyi {
+    width: 500px;
+    padding-top: 50px;
+    padding-left: 100px;
+}
+.music {
+    padding-top: 10px;
+    width: 500px;
+    float: right;
 }
 /*header style*/
 .header{
@@ -77,7 +89,7 @@ html,h1,h2,h3,h4,h5,h6,a{
 .description{
     font-family: 'Beyond Infinity - Demo Regular', serif;
     position: absolute;
-    top: 30%;
+    top: 50%;
     margin: auto;
     padding: 2em;
 }
