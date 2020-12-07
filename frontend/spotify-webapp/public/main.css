@@ -3,13 +3,13 @@ html,h1,h2,h3,h4,h5,h6,a{
 
     font-family: "Raleway", serif;
 }
-.navbar{ background:#F97300;}
+.navbar{ background:#1ed760;}
 
 .nav-link , .navbar-brand{ color: #f4f4f4; cursor: pointer;}
 
 .nav-link{ margin-right: 1em !important;}
 
-.nav-link:hover{ background: #f4f4f4; color: #f97300; }
+.nav-link:hover{ background: #f4f4f4; color: #1ed760; }
 
 .navbar-collapse{ justify-content: flex-end;}
 
@@ -27,7 +27,7 @@ html,h1,h2,h3,h4,h5,h6,a{
 }
 /*header style*/
 .header{
-    background-image: url("among.jpg");
+    background-color: black;
     width: 1080px;
     height: 671px;
     background-attachment: fixed;
