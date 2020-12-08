@@ -4,8 +4,12 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 const PORT = 4200;
 const mongoose = require("mongoose");
-const authRouter = require("./routes/authRouter.js")
+//const authRouter = require("./routes/authRouter.js")
 const requestRouter = require("./routes/requestRouter.js")
+const login = require("./spotify-OAuth/authorization_code/app.js")
+const cookieSession = require('cookie-session')
+const passport = require('passport');
+require('./passport')
 
 //const exchangeRates = require("./routes/routes") // route!
 
@@ -28,10 +32,27 @@ connection.once("open", function() {
 });
 
 // Routes
-app.use("/auth", authRouter)
-app.use("/", requestRouter)
+//app.use("/auth", authRouter)
+app.use("/results", requestRouter)
+//app.use("/", login)
 
-// Listen on Port 4000
+app.use(cookieSession({
+  name: 'spotify-auth-session',  
+  keys: ['key1', 'key2']
+}))
+app.use(passport.initialize());
+app.use(passport.session());
+//app.get('/',(req,res)=>{
+ // res.send(`Hello world ${req.user.displayName}`)
+//})
+app.get('/auth/error', (req, res) => res.send('Unknown Error'))
+app.get('/auth/spotify',passport.authenticate('spotify'));
+app.get('/auth/spotify/callback',passport.authenticate('spotify', { failureRedirect: '/auth/error' }),
+function(req, res) {
+  res.redirect('/results');
+});
+
+// Listen on Port 4200
 app.listen(PORT, function() {
   console.log("Server is running on Port: " + PORT);
 });
