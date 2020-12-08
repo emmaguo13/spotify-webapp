@@ -1,8 +1,6 @@
 import React from 'react';
 import $ from 'jquery';
 
-
-
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -11,6 +9,7 @@ import Col from 'react-bootstrap/Col';
 
 import '../css/Loading.css';
 import Navbar from "react-bootstrap";
+import SiteNavbar from "./SiteNavbar";
 
 const Loading = () => {
     $(document).ready(function () {
@@ -39,26 +38,32 @@ const Loading = () => {
         });
     });
     return (
-        <Navbar className="navbar navbar-expand-lg fixed-top ">
-            <a className="navbar-brand" href="#"/>
-            <img src="images/wdb-black+white.png" className="img-fluid, logo" alt="hello">
-                <button className="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"/>
-                </button>
-                <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul className="navbar-nav mr-4">
-                        <li className="nav-item">
-                            <a className="nav-link, top" data-value="about" href="#">About</a></li>
-                        <div className="vl"/>
-                        <li className="nav-item">
-                            <a className="nav-link, top" data-value="portfolio" href="#">Log In</a>
-                        </li>
-                    </ul>
-                </div>
-        </Navbar>
+        <div className="header">
+            <section>
+                <table>
+                    <tr>
+                        <td>
+                            <img src="../images/ibmwatson.png" className="img-fluid watson" alt="Image N/A"/>
+                        </td>
+                        <td>
+                            <div className="v2"/>
+                        </td>
+                        <td>
+                            <img src="../images/spotify_black_clean.png" className="img-fluid spotifyi"
+                                 alt="Image N/A"/>
 
+                        </td>
+                    </tr>
+                </table>
+            </section>
+            <div className="container">
+            </div>
+            <div className="description">
+                <h1> Personality through Music </h1>
+                <button className="btn btn-outline-secondary btn-lg butt "> Log In to Get Started</button>
+            </div>
+            <img src="../images/musicbrain.png" className="img-fluid music" alt="Image N/A"/>
+        </div>
     );
 };
 
