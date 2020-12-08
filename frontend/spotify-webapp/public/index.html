@@ -1,43 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<head>
+  <meta charset="UTF-8">
+  <title>Spotify-Webapp</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+<!--<section class = "bar" >
+  <svg width="300" height="85">
+  <rect width="300" height=85" />
+</svg>
+</section>-->
+<header class="header">
+  <section>
+    <table>
+      <tr>
+        <td>
+          <img src="images/ibmwatson.png" class="img-fluid watson" alt="Image N/A">
+        </td>
+        <td>
+          <div class="v2"></div>
+        </td>
+        <td>
+          <img src="images/spotify_black_clean.png" class="img-fluid spotifyi" alt="Image N/A">
+        </td>
+      </tr>
+    </table>
+  </section>
+  <div class="container">
+  </div>
+  <div class="description">
+    <h1>    Personality through Music   </h1>
+      <button class="btn btn-outline-secondary btn-lg butt "> Log In to Get Started  </button>
+  </div>
+  <img src="images/musicbrain.png" class="img-fluid music" alt="Image N/A">
+</header>
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg fixed-top ">
+  <a class="navbar-brand" href="#"></a>
+  <img src="images/wdb-black+white.png" class="img-fluid, logo" alt="hello">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-4">
+    <li class="nav-item">
+      <a class="nav-link, top" data-value="about" href="#">About</a></li>
+    <div class="vl"></div>
+    <li class="nav-item">
+      <a class="nav-link, top" data-value="portfolio" href="#">Log In</a>
+    </li>
+  </ul>
+  </div></nav>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+<script type="text/javascript" src='main.js'></script>
+</body>
 </html>
