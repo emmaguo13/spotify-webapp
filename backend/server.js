@@ -10,6 +10,7 @@ const login = require("./spotify-OAuth/authorization_code/app.js")
 const cookieSession = require('cookie-session')
 const passport = require('passport');
 require('./passport')
+const url = require ('url')
 
 //const exchangeRates = require("./routes/routes") // route!
 
@@ -49,7 +50,12 @@ app.get('/auth/error', (req, res) => res.send('Unknown Error'))
 app.get('/auth/spotify',passport.authenticate('spotify'));
 app.get('/auth/spotify/callback',passport.authenticate('spotify', { failureRedirect: '/auth/error' }),
 function(req, res) {
-  res.redirect('/results');
+    res.redirect(url.format({
+       pathname:"/results",
+       query: {
+          "spotifyId": req.body.id, // idk how to get this
+        }
+     }));
 });
 
 // Listen on Port 4200

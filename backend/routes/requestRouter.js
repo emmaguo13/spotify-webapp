@@ -8,18 +8,18 @@ const url = require('url')
 
 router.get('/', (req, res) => {
     console.log(req.body);
-    const authToken = "32920394234"
-    res.header('Authorization', authToken)
+    //const authToken = "32920394234"
+    //res.header('Authorization', authToken)
     //return this redirect, response will be the client id
     //in the front end, use this client id to call the backend again 
-    console.log(res.redirect(url.format ({
-        pathname:"https://api.spotify.com/v1/me",
-    }) ))
+    //return res.redirect(url.format ({
+        //pathname:"https://api.spotify.com/v1/me",
+    //}) )
     //res.send("hello")
 })
 
 router.get('/search', (req, res) => {
-    console.log(req.body)
+    console.log(req.body) //send the spotifyID
     //set header: authorization
 
     const user_id = req.body.user_id //tell ethan to pass in user_id 
