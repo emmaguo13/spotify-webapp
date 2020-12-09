@@ -10,17 +10,25 @@ passport.deserializeUser(function(user, done) {
 passport.use(new SpotifyStrategy({
     clientID: "e30430dda4c544faae0e25c19ebcdf93", // Your client id
     clientSecret: "0347889932ad4e67956189ad81526660", // Your secret
-    callbackURL: "http://localhost:4200/auth/spotify/callback",// Your redirect uri
-    passReqToCallback: true
+    callbackURL: "http://localhost:4200/auth/spotify/callback"// Your redirect uri
+    //passReqToCallback: true
 },
-function(profile, accessToken, refreshToken, done) {
+function( accessToken, refreshToken, profile, done) {
     console.log(profile.id)
-    User.find({where: {spotifyId: profile.id}})
-      .then(foundUser => (foundUser
-        ? done(null, foundUser)
-        : User.create({spotifyId: profile.id, accessToken: accessToken, refreshToken: refreshToken})
-          .then(createdUser => done(null, createdUser))
-      ))
-      .catch(done)
+    const send = {
+        "profile": profile,
+        "accessToken": accessToken
+    }
+    return done(null, send)
+
 }
 ));
+
+
+ //return User.find({where: {spotifyId: profile.id}})
+      //.then(foundUser => (foundUser
+        //?  done(null, profile)
+        //: User.create({spotifyId: profile.id, accessToken: accessToken, refreshToken: refreshToken})
+          //.then(done(null, profile))
+      //))
+      //.catch(done)
