@@ -40,22 +40,31 @@ const Results = () => {
         <div className="Results">
             <SiteNavbar sticky="true" bg="transparent" />
             <div className="header">
-                <div >
-                    <h1> Results! </h1>
-                    <h2>Your sign is Pisces</h2>
-                </div>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <h12> Results </h12>
+                <br/>
+                <h22>Your sign is Pisces</h22>
+
                 <section>
                     <table>
                         <tr>
                             <td>
-                                <img src={Pisces} className="img-fluid watson" alt="Image N/A"/>
+                                <img src={Pisces} className="pisces" alt="Image N/A"/>
                             </td>
                             <td>
                                 <div className="v2"/>
                             </td>
                             <td>
-                                <img src={SpotifyLogo} className="img-fluid spotifyi"
-                                     alt="Image N/A"/>
+                                <h3>Personality Traits
+                                    Pisces is a water sign, they are known for generally being more laid back and agreeable than their other water sign counterparts</h3>
+                                <br/>
+                                <h3>
+                                    They are empathetic and generous, they'll do whatever they can to make sure the people around them are happy. Always looking for the best in others, they are also quite impressionable.
+                                    They are also incredibly creative and artistic!
+                                </h3>
 
                             </td>
                         </tr>

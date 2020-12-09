@@ -14,7 +14,7 @@ function App() {
         <Switch>
             {/* Maybe add navbar for regulator-sub pages then users-mfg pages*/}
             <Route path="/">
-                <Loading />
+                <Results />
             </Route>
             <Route path="/loading">
                 <Loading />
