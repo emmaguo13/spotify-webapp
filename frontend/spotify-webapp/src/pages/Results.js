@@ -40,13 +40,9 @@ const Results = () => {
         <div className="Results">
             <SiteNavbar sticky="true" bg="transparent" />
             <div className="header">
-                <div className="title-border">
-                    <div className="title">
-                        <h1 id="title-text">Results</h1>
-                    </div>
-                </div>
-                <div className="description">
+                <div >
                     <h1> Results! </h1>
+                    <h2>Your sign is Pisces</h2>
                 </div>
                 <section>
                     <table>

@@ -5,7 +5,12 @@ html,h1,h2,h3,h4,h5,h6,a{
 
     font-family: "Raleway", serif;
 }
-
+@font-face {
+    font-family: 'Beyond Infinity - Demo Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Beyond Infinity - Demo Regular'), url('../images/Beyond Infinity - Demo.woff') format('woff');
+}
 
 .navbar{
     background:#1ed760;
@@ -103,18 +108,18 @@ html,h1,h2,h3,h4,h5,h6,a{
     background-position: center;
 }
 
-.description{
-    font-family: 'Titanium Web', serif;
-    position: absolute;
-    top: 50%;
-    left: 5%;
-    margin: auto;
-    padding: 2em;
-}
 
-.description h1{
+
+h1{
+    padding-top: 10%;
+    font-family: 'Titanium Web', serif;
     color:white;
     font-size: 75px;
+}
+h2{
+    font-family: 'Titanium Web', serif;
+    color:white;
+    font-size: 35px;
 }
 .description p{
     color:white;
@@ -131,12 +136,8 @@ html,h1,h2,h3,h4,h5,h6,a{
 .fade-in {
     opacity: 0;
 }
-* {
-    box-sizing: border-box;
-}
-.h1 {
 
-}
+
 .title {
     text-align: center;
     font-weight: normal;
