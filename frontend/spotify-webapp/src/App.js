@@ -1,24 +1,28 @@
-import logo from './logo.svg';
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
 import './App.css';
+
+import Login from './pages/Login';
+import Results from './pages/Results';
+import Loading from './pages/Loading';
 
 function App() {
   return (
-    <Switch>
+      <Router>
+        <Switch>
             {/* Maybe add navbar for regulator-sub pages then users-mfg pages*/}
             <Route path="/">
-                <div>Home Page/Login</div>
-                <Login />
+                <Loading />
             </Route>
             <Route path="/loading">
-                <div> Loading page</div>
                 <Loading />
             </Route>
             <Route path="/results">
-                <div>Results</div>
                 <Results />
             </Route>
-    </Switch>
-
+        </Switch>
+      </Router>
   );
 }
 
