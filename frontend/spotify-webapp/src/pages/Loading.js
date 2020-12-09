@@ -41,7 +41,7 @@ const Loading = () => {
         });
     });
 
-    async function handleLogin() {
+    async function handleClick() {
         const profile = await axios.get(`http://localhost:4200/auth/spotify`)
         const user_id = profile.profile.id 
         const accessToken = profile.accessToken
