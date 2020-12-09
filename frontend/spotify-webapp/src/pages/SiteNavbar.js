@@ -16,7 +16,7 @@ const SiteNavbar = (props) => {
                 background: '#1ed760',
             }}
             variant="dark"
-            className="siteNavbar text-center"
+            className="siteNavbar text-center fixed-top"
             id="siteNavbar"
         >
             <Navbar.Brand>
