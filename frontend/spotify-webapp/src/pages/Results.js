@@ -7,7 +7,7 @@ import '../css/Results.css';
 import Loading from "./Loading";
 
 const Results = () => {
-    $(document).ready(async function () {
+    $(document).ready(function () {
         /* Check the location of each desired element */
         $('.fade-in').each(async function (i) {
             const top_of_object = $(this).offset().top;
@@ -33,7 +33,9 @@ const Results = () => {
         });
     });
     return (
-        <div></div>
+        <div className="Results">
+            <SiteNavbar sticky="true" bg="transparent" />
+        </div>
     );
 };
 export default Results;
