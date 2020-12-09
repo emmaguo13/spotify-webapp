@@ -6,7 +6,9 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-
+import SpotifyLogo from '../images/spotify_black_clean.png';
+import IBMWatson from '../images/ibmwatson.png';
+import MusicHead from '../images/musicbrain.png';
 import '../css/Loading.css';
 import Navbar from "react-bootstrap";
 import SiteNavbar from "./SiteNavbar";
@@ -38,18 +40,20 @@ const Loading = () => {
         });
     });
     return (
+        <div className="Loading" >
+            <SiteNavbar sticky="true" bg="transparent" />
         <div className="header">
             <section>
                 <table>
                     <tr>
                         <td>
-                            <img src="../images/ibmwatson.png" className="img-fluid watson" alt="Image N/A"/>
+                            <img src={IBMWatson} className="img-fluid watson" alt="Image N/A"/>
                         </td>
                         <td>
                             <div className="v2"/>
                         </td>
                         <td>
-                            <img src="../images/spotify_black_clean.png" className="img-fluid spotifyi"
+                            <img src={SpotifyLogo} className="img-fluid spotifyi"
                                  alt="Image N/A"/>
 
                         </td>
@@ -62,7 +66,8 @@ const Loading = () => {
                 <h1> Personality through Music </h1>
                 <button className="btn btn-outline-secondary btn-lg butt "> Log In to Get Started</button>
             </div>
-            <img src="../images/musicbrain.png" className="img-fluid music" alt="Image N/A"/>
+            <img src={MusicHead} className="img-fluid music" alt="Image N/A"/>
+        </div>
         </div>
     );
 };
