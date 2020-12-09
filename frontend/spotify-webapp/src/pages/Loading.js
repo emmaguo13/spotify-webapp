@@ -41,7 +41,7 @@ const Loading = () => {
     });
     return (
         <div className="Loading" >
-            <SiteNavbar sticky="false" bg="transparent" />
+            <SiteNavbar sticky="true" bg="transparent" />
         <div className="header">
             <section>
                 <table>

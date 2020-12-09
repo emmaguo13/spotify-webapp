@@ -13,7 +13,7 @@ const SiteNavbar = (props) => {
             style={{
                 padding: '.8rem 2rem .8rem 2rem',
                 minHeight: '10vh',
-                background: '#1c1c1c',
+                background: '#1ed760',
             }}
             variant="dark"
             className="siteNavbar text-center"
