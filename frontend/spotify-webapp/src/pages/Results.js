@@ -55,17 +55,22 @@ const Results = () => {
                                 <img src={Pisces} className="pisces" alt="Image N/A"/>
                             </td>
                             <td>
-                                <div className="v2"/>
+                                <div className="v3"/>
                             </td>
                             <td>
-                                <h3>Personality Traits
-                                    Pisces is a water sign, they are known for generally being more laid back and agreeable than their other water sign counterparts</h3>
+                                <div className="texts">
+                                <h33>                    Personality Traits:</h33>
                                 <br/>
-                                <h3>
+                                <br/>
+
+                                    <h33>Pisces is a water sign, they are known for generally being more laid back and agreeable than their other water sign counterparts</h33>
+                                <br/>
+                                <br/>
+                                <h33>
                                     They are empathetic and generous, they'll do whatever they can to make sure the people around them are happy. Always looking for the best in others, they are also quite impressionable.
                                     They are also incredibly creative and artistic!
-                                </h3>
-
+                                </h33>
+                                </div>
                             </td>
                         </tr>
                     </table>

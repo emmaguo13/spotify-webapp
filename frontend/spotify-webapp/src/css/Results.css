@@ -72,12 +72,12 @@ html,h1,h2,h3,h4,h5,h6,a{
     height: 45px;
 
 }
-.v2 {
+.v3 {
     border-left: 2px solid white;
-    height: 190px;
+    height: 300px;
     width: 2px;
     margin-left: 40px;
-    margin-top: 90px;
+    margin-top: 70px;
 
 
 }
@@ -118,9 +118,20 @@ h12{
     font-size: 95px;
 }
 h22{
+    text-align: left;
     font-family: 'Titanium Web', serif;
     color:white;
     font-size: 35px;
+}
+h33{
+    text-align: left;
+    font-family: "Proxima Nova", serif;
+    font-size: 20px;
+    color: white;
+}
+.texts {
+    text-align: left;
+    padding-left: 10px;
 }
 
 
