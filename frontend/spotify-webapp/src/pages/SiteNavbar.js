@@ -27,7 +27,7 @@ const SiteNavbar = (props) => {
                         alt="navbar logo"
                         className="selectDisable"
                         style={{
-                            width: '4rem',
+                            width: '6rem',
                         }}
                     />
                 </a>
@@ -57,7 +57,8 @@ const style = {
     NavText: {
         fontFamily: 'Bebas Neue',
         margin: '0 1rem',
-        fontSize: '22px',
+        fontSize: '30px',
+        color: '#ffffff',
     },
 };
 

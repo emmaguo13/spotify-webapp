@@ -65,7 +65,7 @@ const Results = () => {
                         </tr>
                     </table>
                 </section>
-                
+
             </div>
         </div>
     );
