@@ -43,6 +43,9 @@ const SiteNavbar = (props) => {
                     <a href="/login">
                         <p style={style.NavText}>Log In</p>
                     </a>
+                    <a href="/results">
+                        <p style={style.NavText}>Results</p>
+                    </a>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
