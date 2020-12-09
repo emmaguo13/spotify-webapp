@@ -12,6 +12,7 @@ import MusicHead from '../images/musicbrain.png';
 import '../css/Loading.css';
 import Navbar from "react-bootstrap";
 import SiteNavbar from "./SiteNavbar";
+import axios from 'axios';
 
 const Loading = () => {
     $(document).ready(function () {
@@ -39,6 +40,19 @@ const Loading = () => {
             });
         });
     });
+
+    async function handleLogin() {
+        const profile = await axios.get(`http://localhost:4200/auth/spotify`)
+        const user_id = profile.profile.id 
+        const accessToken = profile.accessToken
+        console.log(user_id)
+        console.log(accessToken)
+        //const playlists = await axios.get('http://localhost:4200/auth/spotify')
+        
+    }
+
+    axios.get("/auth/spotify")
+
     return (
         <div className="Loading" >
             <SiteNavbar sticky="true" bg="transparent" />
@@ -64,7 +78,7 @@ const Loading = () => {
             </div>
             <div className="description">
                 <h1> Personality through Music </h1>
-                <button className="btn btn-outline-secondary btn-lg butt "> Log In to Get Started</button>
+                <button className="btn btn-outline-secondary btn-lg butt" onClick={handleClick}> Log In to Get Started</button>
             </div>
             <img src={MusicHead} className="img-fluid music" alt="Image N/A"/>
         </div>
