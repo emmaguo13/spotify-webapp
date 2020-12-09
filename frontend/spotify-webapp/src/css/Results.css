@@ -131,5 +131,115 @@ html,h1,h2,h3,h4,h5,h6,a{
 .fade-in {
     opacity: 0;
 }
+* {
+    box-sizing: border-box;
+}
+.h1 {
+
+}
+.title {
+    text-align: center;
+    font-weight: normal;
+    font-size: 30px;
+    color: white;
+}
+.title-border {
+    border-radius: 0;
+    border-bottom: 3px solid black;
+}
+.main-body {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    border-bottom: 3px solid black;
+    border-left: 1px solid black;
+}
+.left-section {
+    text-align: center;
+    width: 25%;
+    border-right: 1px solid black;
+    padding: 0 10px;
+}
+.center-section {
+    text-align: center;
+    width: 50%;
+    padding: 0 10px;
+    border-right: 1px solid black;
+}
+.right-section {
+    text-align: center;
+    width: 25%;
+    padding: 0 10px;
+    border-right: 1px solid black;
+}
+.bottom-right-section {
+    padding-left: 30px;
+    border-right: 1px solid black;
+}
+.article-title {
+    font-size: 30px;
+    font-weight: normal;
+    font-style: italic;
+    text-align: center;
+}
+.article-text {
+    text-align: left;
+}
+.row-text {
+    font-weight: bold;
+    font-family: "Futura", serif;
+    color: #666;
+    font-size: 30px;
+    padding-left: 30px;
+}
+.final-section {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    padding-left: 0;
+    margin: 0;
+    width: 100%;
+}
+.section-politics {
+    background-color: #ffeaa7;
+    display: flex;
+    align-items: center;
+    height: 10%;
+    flex: 1;
+}
+.section-technology {
+    background-color: #81ecec;
+    display: flex;
+    align-items: center;
+    height: 10%;
+    flex: 1;
+}
+.section-local {
+    background-color: #55efc4;
+    display: flex;
+    align-items: center;
+    height: 10%;
+    flex: 1;
+}
+.section-opinion {
+    background-color: #74b9ff;
+    display: flex;
+    align-items: center;
+    height: 10%;
+    flex: 1;
+}
+.section-sports {
+    background-color: #a29bfe;
+    display: flex;
+    align-items: center;
+    height: 10%;
+    flex: 1;
+}
+#title-text {
+    font-family: "Times New Roman", serif;
+    size: auto;
+}
+
 
 

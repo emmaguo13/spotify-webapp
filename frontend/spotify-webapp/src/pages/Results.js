@@ -8,6 +8,7 @@ import Loading from "./Loading";
 import IBMWatson from "../images/ibmwatson.png";
 import SpotifyLogo from "../images/spotify_black_clean.png";
 import MusicHead from "../images/musicbrain.png";
+import Pisces from "../images/pisces.jpg";
 
 const Results = () => {
     $(document).ready(function () {
@@ -39,12 +40,32 @@ const Results = () => {
         <div className="Results">
             <SiteNavbar sticky="true" bg="transparent" />
             <div className="header">
-                <div className="container">
+                <div className="title-border">
+                    <div className="title">
+                        <h1 id="title-text">Results</h1>
+                    </div>
                 </div>
                 <div className="description">
-                    <h1> Personality through Music </h1>
+                    <h1> Results! </h1>
                 </div>
-                <img src={MusicHead} className="img-fluid music" alt="Image N/A"/>
+                <section>
+                    <table>
+                        <tr>
+                            <td>
+                                <img src={Pisces} className="img-fluid watson" alt="Image N/A"/>
+                            </td>
+                            <td>
+                                <div className="v2"/>
+                            </td>
+                            <td>
+                                <img src={SpotifyLogo} className="img-fluid spotifyi"
+                                     alt="Image N/A"/>
+
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+                
             </div>
         </div>
     );
