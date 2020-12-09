@@ -5,7 +5,7 @@ const bodyParser = require("body-parser");
 const PORT = 4200;
 const mongoose = require("mongoose");
 //const authRouter = require("./routes/authRouter.js")
-const requestRouter = require("./routes/requestRouter.js")
+//const requestRouter = require("./routes/requestRouter.js")
 const login = require("./spotify-OAuth/authorization_code/app.js")
 const cookieSession = require('cookie-session')
 const passport = require('passport');
@@ -72,7 +72,7 @@ app.get('/results' , (req, res) => {
   //res.send("hello")
 })
 
-router.get('/search', (req, res) => {
+app.get('/search', (req, res) => {
   console.log(req.body) //send the spotifyID, accesstoken
   res.header('Authorization', req.body.accessToken)
   const user_id = req.body.user_id 
@@ -82,7 +82,7 @@ router.get('/search', (req, res) => {
   }))
 }) 
 
-router.get('/items', (req, res) => {
+app.get('/items', (req, res) => {
   console.log(req.body) //send the playlistID and the authorization toen
   
   //set header: authorization
