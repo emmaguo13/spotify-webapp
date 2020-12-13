@@ -14,6 +14,13 @@ const url = require ('url')
 
 //const exchangeRates = require("./routes/routes") // route!
 
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+  res.header("Access-Control-Allow-Headers", "x-access-token, Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+
 app.use(cors());
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
@@ -74,8 +81,9 @@ app.get('/results' , (req, res) => {
 
 app.get('/search', (req, res) => {
   console.log(req.body) //send the spotifyID, accesstoken
-  res.header('Authorization', req.body.accessToken)
-  const user_id = req.body.user_id 
+  const accessToken = "BQDe1QbV8TGRZEiY5L0mVJc1lYr9nWMJDbRKboxDUMvpsl5hz0pRiC5Q4KY4Hr8XX6f7EfPyqKaaV8sgWlQFxMewAFmXsY1Bs_bIOtUEmdR0WneNa3bY99tZZN0x6lTb9BiHItMDVMGznUoK7nCQxcl9QZg9S-PWbQ"
+  res.header('Authorization', `Bearer ${accessToken}`)
+  const user_id = "213vld7kfrzxz3seboqv62tcy"
   //redirect + return list of playlists
   return res.redirect(url.format({
       pathname: "https://api.spotify.com/v1/users/" + user_id + "/playlists"

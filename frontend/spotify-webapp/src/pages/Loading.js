@@ -42,7 +42,8 @@ const Loading = () => {
     });
 
     async function handleClick() {
-        const profile = await axios.get(`http://localhost:4200/auth/spotify`)
+        const profile = await axios.get(`http://localhost:4200/auth/spotify`, {
+            headers: {"Content-Type": "application/json"}})
         const user_id = profile.profile.id 
         const accessToken = profile.accessToken
         console.log(user_id)
@@ -50,8 +51,6 @@ const Loading = () => {
         //const playlists = await axios.get('http://localhost:4200/auth/spotify')
         
     }
-
-    axios.get("/auth/spotify")
 
     return (
         <div className="Loading" >
