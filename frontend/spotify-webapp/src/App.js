@@ -9,11 +9,12 @@ import Loading from './pages/Loading';
 
 function App() {
   return (
+      <div className="App">
       <Router>
         <Switch>
             {/* Maybe add navbar for regulator-sub pages then users-mfg pages*/}
             <Route path="/">
-                <Loading />
+                <Results />
             </Route>
             <Route path="/loading">
                 <Loading />
@@ -23,6 +24,7 @@ function App() {
             </Route>
         </Switch>
       </Router>
+      </div>
   );
 }
 

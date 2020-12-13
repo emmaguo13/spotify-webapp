@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+@font-face {
+    font-family: 'Beyond Infinity - Demo Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Beyond Infinity - Demo Regular'), url('../images/Beyond Infinity - Demo.woff') format('woff');
+}
+html,h1,h2,h3,h4,h5,h6,a{
+    font-family: "Beyond Infinity - Demo Regular", serif;
+}
+.navbar{
+    background:#1ed760;
+    min-height: 70px;
+}
+
+.nav-link , .navbar-brand{ color: #f4f4f4; cursor: pointer;}
+
+.nav-link{
+    margin-right: 1em !important;
+}
+
+.nav-link:hover{ background: #f4f4f4; color: #1ed760; }
+
+.navbar-collapse{ justify-content: flex-end;}
+
+.navbar-toggler{  background:#fff !important;}
+
+.navbar-collapse{
+    justify-content: flex-end;
+}
+
+.bg-dark{
+    background-color:#343a40!important
+}
+.bg-primary{
+    background-color:#007bff!important
+}
+.logo {
+    width: 110px;
+}
+.top {
+    font-size: 30px;
+    letter-spacing: .1em;
+    font-family: "Bebas Neue", serif;
+    color: white;
+    margin-left:30px;
+    margin-right:30px;
+}
+.bar {
+    background-color: #09851D;
+}
+.butt {
+    margin-left: 150px;
+    margin-top: 20px;
+}
+
+.description butt {
+    font-family: "Proxima Nova Rg", serif;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.vl {
+    border-left: 1.5px solid black;
+    height: 45px;
+
+}
+.v3 {
+    border-left: 2px solid white;
+    height: 300px;
+    width: 2px;
+    margin-left: 40px;
+    margin-top: 70px;
+
+
+}
+.pisces {
+    width: 350px;
+    padding-left: 110px;
+    padding-top: 10px;
+}
+.spotifyi {
+    width: 400px;
+    padding-top: 77px;
+    padding-left: 30px;
+}
+.music {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    width: 594px;
+    float: right;
+}
+/*header style*/
+.header{
+    background-color: black;
+    height: 671px;
+    width: auto;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+
+h12{
+    margin-top: 200px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Beyond Infinity - Demo Regular', serif;
+    color:white;
+    font-size: 95px;
+}
+h22{
+    text-align: left;
+    font-family: 'Titanium Web', serif;
+    color:white;
+    font-size: 35px;
+}
+h33{
+    text-align: left;
+    font-family: "Proxima Nova", serif;
+    font-size: 20px;
+    color: white;
+}
+.texts {
+    text-align: left;
+    padding-left: 10px;
+}
+
+
+

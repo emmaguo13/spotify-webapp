@@ -5,9 +5,13 @@ import SiteNavbar from './SiteNavbar';
 
 import '../css/Results.css';
 import Loading from "./Loading";
+import IBMWatson from "../images/ibmwatson.png";
+import SpotifyLogo from "../images/spotify_black_clean.png";
+import MusicHead from "../images/musicbrain.png";
+import Pisces from "../images/pisces.jpg";
 
 const Results = () => {
-    $(document).ready(async function () {
+    $(document).ready(function () {
         /* Check the location of each desired element */
         $('.fade-in').each(async function (i) {
             const top_of_object = $(this).offset().top;
@@ -33,7 +37,47 @@ const Results = () => {
         });
     });
     return (
-        <div></div>
+        <div className="Results">
+            <SiteNavbar sticky="true" bg="transparent" />
+            <div className="header">
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <h12> Results </h12>
+                <br/>
+                <h22>Your sign is Pisces</h22>
+
+                <section>
+                    <table>
+                        <tr>
+                            <td>
+                                <img src={Pisces} className="pisces" alt="Image N/A"/>
+                            </td>
+                            <td>
+                                <div className="v3"/>
+                            </td>
+                            <td>
+                                <div className="texts">
+                                <h33>                    Personality Traits:</h33>
+                                <br/>
+                                <br/>
+
+                                    <h33>Pisces is a water sign, they are known for generally being more laid back and agreeable than their other water sign counterparts</h33>
+                                <br/>
+                                <br/>
+                                <h33>
+                                    They are empathetic and generous, they'll do whatever they can to make sure the people around them are happy. Always looking for the best in others, they are also quite impressionable.
+                                    They are also incredibly creative and artistic!
+                                </h33>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+
+            </div>
+        </div>
     );
 };
 export default Results;

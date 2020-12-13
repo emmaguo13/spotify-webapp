@@ -4,6 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 
 import NavbarLogo from '../images/wdb-black+white.png';
+import {Link} from 'react-router-dom';
 
 const SiteNavbar = (props) => {
 
@@ -26,7 +27,7 @@ const SiteNavbar = (props) => {
                         alt="navbar logo"
                         className="selectDisable"
                         style={{
-                            width: '4rem',
+                            width: '6rem',
                         }}
                     />
                 </a>
@@ -37,15 +38,15 @@ const SiteNavbar = (props) => {
             />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ml-auto">
-                    <a href="/about">
+                    <Link to="/about">
                         <p style={style.NavText}>About</p>
-                    </a>
-                    <a href="/login">
+                    </Link>
+                    <Link to="/login">
                         <p style={style.NavText}>Log In</p>
-                    </a>
-                    <a href="/results">
+                    </Link>
+                    <Link to="/results">
                         <p style={style.NavText}>Results</p>
-                    </a>
+                    </Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
@@ -56,7 +57,8 @@ const style = {
     NavText: {
         fontFamily: 'Bebas Neue',
         margin: '0 1rem',
-        fontSize: '22px',
+        fontSize: '30px',
+        color: '#ffffff',
     },
 };
 

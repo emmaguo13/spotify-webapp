@@ -6,6 +6,12 @@ html,h1,h2,h3,h4,h5,h6,a{
     font-family: "Raleway", serif;
 }
 
+@font-face {
+    font-family: 'Beyond Infinity - Demo Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Beyond Infinity - Demo Regular'), url('../images/Beyond Infinity - Demo.woff') format('woff');
+}
 
 .navbar{
     background:#1ed760;
@@ -106,13 +112,14 @@ html,h1,h2,h3,h4,h5,h6,a{
 .description{
     font-family: 'Titanium Web', serif;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 5%;
     margin: auto;
     padding: 2em;
 }
 
 .description h1{
+    font-family: "Beyond Infinity - Demo Regular", serif;
     color:white;
     font-size: 75px;
 }
